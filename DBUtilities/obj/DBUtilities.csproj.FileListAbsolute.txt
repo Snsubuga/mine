@@ -1,0 +1,5 @@
+H:\Inventory\DBUtilities\obj\Debug\ResolveAssemblyReference.cache
+H:\Inventory\DBUtilities\bin\Debug\DBUtilities.dll
+H:\Inventory\DBUtilities\bin\Debug\DBUtilities.pdb
+H:\Inventory\DBUtilities\obj\Debug\DBUtilities.dll
+H:\Inventory\DBUtilities\obj\Debug\DBUtilities.pdb

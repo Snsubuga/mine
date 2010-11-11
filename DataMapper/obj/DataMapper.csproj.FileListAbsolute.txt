@@ -1,0 +1,9 @@
+H:\Inventory\DataMapper\bin\Debug\DataMapper.dll
+H:\Inventory\DataMapper\bin\Debug\DataMapper.pdb
+H:\Inventory\DataMapper\obj\Debug\ResolveAssemblyReference.cache
+H:\Inventory\DataMapper\obj\Debug\DataMapper.dll
+H:\Inventory\DataMapper\obj\Debug\DataMapper.pdb
+H:\Inventory\DataMapper\bin\Debug\DBUtilities.dll
+H:\Inventory\DataMapper\bin\Debug\Model.dll
+H:\Inventory\DataMapper\bin\Debug\DBUtilities.pdb
+H:\Inventory\DataMapper\bin\Debug\Model.pdb

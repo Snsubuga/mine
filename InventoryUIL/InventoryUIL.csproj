@@ -1,0 +1,125 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9E6E71F-F122-455D-9418-3684DE6A5073}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InventoryUIL</RootNamespace>
+    <AssemblyName>InventoryUIL</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add new\NewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add new\NewItem.Designer.cs">
+      <DependentUpon>NewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add new\NewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add new\NewUser.Designer.cs">
+      <DependentUpon>NewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Do edit\EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Do edit\EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transactions\Issue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions\Issue.Designer.cs">
+      <DependentUpon>Issue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\Receive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions\Receive.Designer.cs">
+      <DependentUpon>Receive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions\Return.Designer.cs">
+      <DependentUpon>Return.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataMapper\DataMapper.csproj">
+      <Project>{E356D54E-2AA1-4980-9ECD-33F73FD2E115}</Project>
+      <Name>DataMapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{5A95E668-323B-4879-87CE-9293EDC241AE}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OtherUtilities\OtherUtilities.csproj">
+      <Project>{B13DA5A4-82EA-431F-95A9-A9AE2CDBFE2E}</Project>
+      <Name>OtherUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Add new\NewItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add new\NewUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Do edit\EditUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\Issue.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Issue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\Receive.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Receive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\Return.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Return.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

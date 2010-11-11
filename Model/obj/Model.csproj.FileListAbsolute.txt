@@ -1,0 +1,5 @@
+H:\Inventory\Model\bin\Debug\Model.dll
+H:\Inventory\Model\bin\Debug\Model.pdb
+H:\Inventory\Model\obj\Debug\ResolveAssemblyReference.cache
+H:\Inventory\Model\obj\Debug\Model.dll
+H:\Inventory\Model\obj\Debug\Model.pdb
